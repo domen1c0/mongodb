@@ -45,7 +45,7 @@ public class UserResource {
 		User obj = service.fromDTO(objDto);
 		obj = service.insert(obj);
 		URI uri = ServletUriComponentsBuilder.fromCurrentRequest().path("/{id}").buildAndExpand(obj.getId()).toUri();
-		return ResponseEntity.created(uri).build(); //Esse comando retorna uma resposta vazia com o código 201 created
+		return ResponseEntity.created(uri).build(); //Esse comando retorna uma resposta vazia com o código 201 created.
 	}
 	
 	@DeleteMapping(value = "/{id}")

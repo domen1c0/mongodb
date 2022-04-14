@@ -9,7 +9,7 @@ import org.springframework.web.bind.annotation.ExceptionHandler;
 
 import com.estudo.mongodb.services.exception.ObjectNotFoundException;
 
-@ControllerAdvice //Indica que a classe vai tratar possíveis erros nas requisições
+@ControllerAdvice //Indica que a classe vai tratar possíveis erros nas requisições.
 public class ResourceExceptionHandler {
 	
 	@ExceptionHandler(ObjectNotFoundException.class)
