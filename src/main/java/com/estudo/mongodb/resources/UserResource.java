@@ -24,7 +24,6 @@ import com.estudo.mongodb.services.UserService;
 @RequestMapping(value = "/users")
 public class UserResource {
 	
-	
 	@Autowired
 	private UserService service;
 	
@@ -62,5 +61,4 @@ public class UserResource {
 		obj = service.update(obj);
 		return ResponseEntity.noContent().build();
 	}
-	
 }

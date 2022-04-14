@@ -14,7 +14,6 @@ import com.estudo.mongodb.services.exception.ObjectNotFoundException;
 @Service
 public class UserService   {
 	
-	
 	@Autowired
 	private UserRepository userRepository;
 	
@@ -50,6 +49,4 @@ public class UserService   {
 	public User fromDTO(UserDTO objDto) {
 		return new User(objDto.getId(), objDto.getName(), objDto.getEmail());
 	}
-	
-
 }
