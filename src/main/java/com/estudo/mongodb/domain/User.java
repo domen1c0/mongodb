@@ -10,7 +10,7 @@ import org.springframework.data.mongodb.core.mapping.Document;
 public class User implements Serializable {
 	private static final long serialVersionUID = 1L;
 	
-	@Id
+	@Id //Configura para que a chave seja o Id
 	private String id;
 	private String name;
 	private String email;
